@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Центр повышения квалификации специалистов массажа"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="main">
+				<div class="main__container">
+					<main class="body">
+						<div class="body__left">
+							<h1 class="main__title">Центр повышения квалификации специалистов массажа является идеальным
+								партнером, который поможет в
+								новых начинаниях! </h1>
+							<a href="https://api.whatsapp.com/send?phone=77056766766" target="_blank"
+								class="btn main__btn">Записаться</a>
+						</div>
+						<div class="body__right">
+							<img src="@img/main-photo.png" alt="main">
+						</div>
+						<div class="body__botton">
+							<div class="body__botton-left">
+								Мы знаем суть выражения – «идти в ногу со временем», и готовы помочь вам в этом.
+							</div>
+							<div class="body__botton-right">
+								Огромный опыт в обучении и подготовке квалифицированных специалистов позволяет нам с гордостью
+								называться лучшим центром, проводящим курсы в Алматы.
+							</div>
+						</div>
+					</main>
+				</div>
+			</section>
+
+			<section class="curs">
+				<div class="curs__container">
+					<div class="curs__body">
+						<div class="curs__item">
+							<div class="curs__item-text">
+								<span>Курсы обучения массажа</span> по повышению квалификаций - это хорошая возможность освоить
+								новую
+								высокооплачиваемую и востребованную технику массажа. Наша профессиональная подготовка для
+								действующих специалистов, это 20% теории и 80% практики.
+								Курс включает обучения 4 видов массажа.
+							</div>
+							<div class="curs__item-photo">
+								<img src="@img/curs-item1.png" alt="">
+							</div>
+						</div>
+						<div class="curs__item">
+							<div class="curs__item-photo curs__item-photo-two">
+								<img src="@img/curs-item2.png" alt="">
+							</div>
+							<div class="curs__item-text">
+								<span>Вы научитесь</span> основным приемам. Вы будете применять эти приемы, чтобы достичь
+								максимального уровня мастерства. Мы гарантируем вам освоение навыков, которые в дальнейшем вы
+								будете совершенствовать в профессиональной деятельности массажистов.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="programms">
+				<div class="programms__container">
+					<h2 class="programms__body-title title">Наши программы</h2>
+					<div class="programms__body">
+						<div class="programms__body-left">
+							<div class="programms__body-left-subtitle">Мастер-массажист повышения квалификаций включает в себя
+								такие виды как:</div>
+							<ul class="programms__body-left-item">
+								<li class="programms__body-left-list">Классический
+									(общий, лицовой, шейно-воротниковый, голено-стопный)</li>
+								<li class="programms__body-left-list">Медовый (пилинг, проблемные места)</li>
+								<li class="programms__body-left-list">Баночный (антицеллюлитный)</li>
+								<li class="programms__body-left-list">Детский массаж</li>
+								<li class="programms__body-left-list">Спортивный массаж</li>
+								<li class="programms__body-left-list">Стоунтерапия (массаж горячими камнями)</li>
+							</ul>
+							<div class="programms__body-left-text">«Повышения квалификаций для действующих массажистов»
+								Обучение проводит квалифицированный специалист, стаж 10 лет.
+							</div>
+							<a href="" class="btn programms__body-left-btn">Записаться</a>
+						</div>
+						<div class="programms__body-right">
+							<img src="@img/programms.png" alt="programms">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="about__container">
+					<h2 class="about__title title">О нас</h2>
+					<div class="about__body">
+						<div class="about__body-left">
+							<div class="about__body-subtitle">Центр повышения квалификации специалистов массажа международного
+								образца это
+							</div>
+							<ul class="about__body-list">
+								<li class="about__body-link">• авторская методика обучения</li>
+								<li class="about__body-link">• новые программы</li>
+								<li class="about__body-link">• оборудованные классы</li>
+								<li class="about__body-link">• команда сильнейших профессионалов и менеджеров</li>
+								<li class="about__body-link">• гибкий график обучения (в группе, в паре и индивидуально) с
+									индивидуальным подходом к каждому ученику</li>
+								<li class="about__body-link">• выдача СЕРТИФИКАТОВ</li>
+								<li class="about__body-link">• поддержка выпускников после окончания обучения в классах центра и
+									дистанционно</li>
+							</ul>
+							<div class="about__body-text">
+								Наш опыт это начало Вашей блистательной карьеры профессионала!</div>
+						</div>
+						<div class="about__body-right">
+							<img src="@img/about.png" alt="about">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
