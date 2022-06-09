@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Центр повышения квалификации специалистов массажа международного образца"
-})
+
+<head>
+	<title>Центр повышения квалификации специалистов массажа международного образца</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220609102052">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container">
+				<a href="#home" class="logo">Центр повышения квалификации специалистов массажа международного образца</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Программы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Наши контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-da=".menu__body, 768, 2" class="header__tel">
+					<a href="tel:+77056766766" class="phone">+7 705 676 6766</a>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 
 			<section class="main">
@@ -16,11 +42,10 @@
 							<h1 class="main__title">Центр повышения квалификации специалистов массажа является идеальным
 								партнером, который поможет в
 								новых начинаниях! </h1>
-							<a href="https://api.whatsapp.com/send?phone=77056766766" target="_blank"
-								class="btn main__btn">Записаться</a>
+							<a href="https://api.whatsapp.com/send?phone=77056766766" target="_blank" class="btn main__btn">Записаться</a>
 						</div>
 						<div class="body__right">
-							<img src="@img/main-photo.png" alt="main">
+							<img src="img/main-photo.png" alt="main">
 						</div>
 						<div class="body__botton">
 							<div class="body__botton-left">
@@ -47,12 +72,12 @@
 								Курс включает обучения 4 видов массажа.
 							</div>
 							<div class="curs__item-photo">
-								<img src="@img/curs-item1.png" alt="">
+								<img src="img/curs-item1.png" alt="">
 							</div>
 						</div>
 						<div class="curs__item">
 							<div class="curs__item-photo curs__item-photo-two">
-								<img src="@img/curs-item2.png" alt="">
+								<img src="img/curs-item2.png" alt="">
 							</div>
 							<div class="curs__item-text">
 								<span>Вы научитесь</span> основным приемам. Вы будете применять эти приемы, чтобы достичь
@@ -86,7 +111,7 @@
 							<a href="" class="btn programms__body-left-btn">Записаться</a>
 						</div>
 						<div class="programms__body-right">
-							<img src="@img/programms.png" alt="programms">
+							<img src="img/programms.png" alt="programms">
 						</div>
 					</div>
 				</div>
@@ -115,7 +140,7 @@
 								Наш опыт это начало Вашей блистательной карьеры профессионала!</div>
 						</div>
 						<div class="about__body-right">
-							<img src="@img/about.png" alt="about">
+							<img src="img/about.png" alt="about">
 						</div>
 					</div>
 				</div>
@@ -182,17 +207,34 @@
 							<a href="" class="btn programms__body-left-btn">Записаться</a>
 						</div>
 						<div class="programms__body-right">
-							<img src="@img/programms.png" alt="programms">
+							<img src="img/programms.png" alt="programms">
 						</div>
 					</div>
 				</div>
 			</section>
 
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__text">
+					Все права защищены © 2022 Разработка и поддержка сайта - Студия <a href="https://webprof.kz" target="_blank">«Webprof.kz»</a>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220609102052"></script>
 </body>
 
 </html>

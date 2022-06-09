@@ -315,3 +315,110 @@
 		}
 	}
 }
+
+//form ========================================================================================================================================================
+
+.form {
+	background: linear-gradient(90deg, #FFF7EA 0%, #EFCD8F 100%);
+	@include adaptiveValue("padding-top", 40, 20);
+	@include adaptiveValue("padding-bottom", 40, 20);
+	color: #000;
+	text-align: center;
+
+	&__container {}
+
+	&__body {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 137.4%;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__bodyp-text {
+		font-weight: 600;
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: math.div(27, 22);
+	}
+
+	&__body-social {}
+}
+
+.btnsoc {
+	box-shadow: 0px 4px 15px rgba(43, 57, 130, 0.25);
+	border-radius: 30px;
+	min-height: rem(45);
+	min-width: 195px;
+	padding: 14px 36px;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: math.div(18, 15);
+	text-align: center;
+	color: #FFFFFF;
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		opacity: 0.95;
+	}
+
+	@media (max-width:$tablet) {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+}
+
+.link-phone {
+	background: #2B3982;
+}
+
+.link-whatsapp {
+	background: #43D854;
+}
+
+.link-telegram {
+	background: #0088CC;
+}
+
+.link-instagram {
+	background: linear-gradient(90deg, #405DE6 1.79%, #833AB4 100%);
+}
+
+// text ========================================================================================================================================================
+
+.text {
+	@include adaptiveValue("margin-top", 80, 40);
+	@include adaptiveValue("margin-bottom", 80, 40);
+
+	&__container {}
+}
+
+.body {
+
+
+	&__two {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&-left {
+			width: 35%;
+
+			@media (max-width:$tablet) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__botton-left {}
+
+	&__botton-right {}
+}
