@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220609102052">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220609103007">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +16,18 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#home" class="logo">Центр повышения квалификации специалистов массажа международного образца</a>
+				<a href="#home" data-goto=".main" data-goto-top="30" data-goto-header class="logo">Центр повышения квалификации
+					специалистов массажа международного образца</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Программы</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Наши контакты</a></li>
+							<li class="menu__item"><a href="#" data-goto-top="80" data-goto=".main" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item"><a href="#" data-goto=".about" data-goto-top="30" data-goto-header class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item"><a href="#" data-goto=".programms" data-goto-top="30" data-goto-header class="menu__link">Программы</a></li>
+							<li class="menu__item"><a href="#" data-goto="#why" data-goto-top="30" data-goto-header class="menu__link">Почему мы</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -181,7 +184,7 @@
 				</div>
 			</section>
 
-			<section class="programms">
+			<section class="programms" id="why">
 				<div class="programms__container">
 					<h2 class="programms__body-title title">Почему нас выбирают</h2>
 					<div class="programms__body">
@@ -234,7 +237,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220609102052"></script>
+	<script src="js/app.min.js?_v=20220609103007"></script>
 </body>
 
 </html>
