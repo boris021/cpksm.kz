@@ -1,18 +1,5 @@
 (() => {
     "use strict";
-    function isWebp() {
-        function testWebP(callback) {
-            let webP = new Image;
-            webP.onload = webP.onerror = function() {
-                callback(2 == webP.height);
-            };
-            webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-        }
-        testWebP((function(support) {
-            let className = true === support ? "webp" : "no-webp";
-            document.documentElement.classList.add(className);
-        }));
-    }
     let isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -89,12 +76,12 @@
         bodyUnlock();
         document.documentElement.classList.remove("menu-open");
     }
-    function functions_FLS(message) {
+    function FLS(message) {
         setTimeout((() => {
             if (window.FLS) console.log(message);
         }), 0);
     }
-    let gotoblock_gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
+    let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
         const targetBlockElement = document.querySelector(targetBlock);
         if (targetBlockElement) {
             let headerItem = "";
@@ -120,8 +107,8 @@
                     behavior: "smooth"
                 });
             }
-            functions_FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
-        } else functions_FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
+            FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
+        } else FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
     };
     let addWindowScrollEvent = false;
     function pageNavigation() {
@@ -136,7 +123,7 @@
                     const noHeader = gotoLink.hasAttribute("data-goto-header") ? true : false;
                     const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
                     const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
-                    gotoblock_gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
+                    gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
                     e.preventDefault();
                 }
             } else if ("watcherCallback" === e.type && e.detail) {
@@ -159,7 +146,7 @@
         if (getHash()) {
             let goToHash;
             if (document.querySelector(`#${getHash()}`)) goToHash = `#${getHash()}`; else if (document.querySelector(`.${getHash()}`)) goToHash = `.${getHash()}`;
-            goToHash ? gotoblock_gotoBlock(goToHash, true, 500, 20) : null;
+            goToHash ? gotoBlock(goToHash, true, 500, 20) : null;
         }
     }
     setTimeout((() => {
@@ -267,7 +254,6 @@
     const da = new DynamicAdapt("max");
     da.init();
     window["FLS"] = true;
-    isWebp();
     addTouchClass();
     menuInit();
     pageNavigation();
