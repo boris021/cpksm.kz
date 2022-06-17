@@ -56,49 +56,15 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #fff;
+	// background-color: #fff;
+	background: url(../img/sertbg.jpg) repeat;
 	padding: 20px;
 	width: 100%;
 	max-width: 600px;
-	border-radius: 20px;
+	// border-radius: 20px;
 
 	.lock & {
 		visibility: visible;
-	}
-}
-
-.popup {
-	&__text {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-
-		&__popimg {
-			width: 250px;
-
-			img {
-				width: 100%;
-			}
-		}
-
-		h3 {
-			text-align: center;
-			font-size: 26px;
-			font-weight: 600;
-			line-height: math.div(22, 26);
-			color: #000;
-			margin-top: 30px;
-
-			margin-bottom: 15px;
-		}
-
-		p {
-			font-size: 18px;
-			color: #000;
-			text-align: center;
-			font-weight: 500;
-		}
 	}
 }
 
@@ -106,4 +72,47 @@ body::after {
 	color: #000;
 	display: block;
 	margin-left: auto;
+}
+
+.popup {
+	color: #000;
+	text-align: center;
+
+	&__text {
+		font-family: "Play";
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 128.9%;
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 60, 30);
+		font-family: 'PT Serif', serif;
+		margin-bottom: 15px;
+	}
+
+	&__name {
+		font-family: 'Montserrat';
+		font-style: italic;
+		font-weight: 500;
+		@include adaptiveValue("font-size", 24, 22);
+		line-height: math.div(29, 24);
+		margin-bottom: 20px;
+	}
+}
+
+.popupqr {
+	width: 55px;
+	margin-left: auto;
+	margin-top: rem(-70);
+
+	@media (max-width:$tablet) {
+		margin: auto;
+	}
+
+	img {
+		width: 100%;
+	}
 }
